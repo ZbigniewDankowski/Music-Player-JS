@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Music Player</h1>
+    <div class="playlist_mobile hidden"><i class="fa-solid fa-list"></i></div>
+    <div class="playlist">
+      <div class="wrapper">
+        <h2 class="playlist_title">Playlist</h2>
+        <ul class="list">
+         
+       
+      </div>
+    </div>
+    <div class="main">
+      <div class="wrapper">
+        <div class="unactiveSong">
+          <h2>Welcome</h2>
+          <h3>Select a song from the Playlist and enjoy the music!!</h3>
+        </div>
+        <div class="activeSong hidden">
+        <div class="now">
+          <div class="active_song_info">
+            <div class="active_song_title">Title</div>
+            <div class="active_song_author">Author</div>
+          </div>
+          <div class="active_song_image"></div>
+        </div>
+        <div class="time">
+          <span class="startTime">00:00</span>
+          <div class="bar">
+            <input class="seek" type="range" min="0" max="100" value="0" />
+            <div class="time_bar"></div>
+            <div class="dot"></div>
+          </div>
+          <span class="endTime">00:00</span>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-backward-step music_back"></i>
+          <i class="fa-solid fa-pause music_play"></i>
+          <i class="fa-solid fa-forward-step music_forward"></i>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="./MusicList.js" type="module"></script>
+    <script src="./App.js" type="module"></script>
+  </body>
+</html>
