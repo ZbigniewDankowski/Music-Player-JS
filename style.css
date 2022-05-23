@@ -186,6 +186,7 @@ body {
   flex-basis: 100%;
   text-align: center;
   padding: 10px;
+  display: flex;
 }
 .main .time {
   display: flex;
@@ -282,7 +283,7 @@ body {
   .playlist {
     position: fixed;
     background-color: black;
-    width: 50%;
+    width: 100vw;
     height: 100%;
     top: 0;
     left: -100%;

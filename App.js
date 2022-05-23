@@ -52,6 +52,8 @@ playlistButtons.forEach((button, index) =>
     music.play();
     unactiveSongContainer.classList.add("hidden");
     activeSongContainer.classList.remove("hidden");
+    musicPlayButton.classList.add("fa-pause");
+    musicPlayButton.classList.remove("fa-play");
     setActualMusicInfo(index);
   })
 );
@@ -153,4 +155,3 @@ const playlist = document.querySelector(".playlist");
 mobile_playlist_button.addEventListener("click", () => {
   playlist.classList.toggle("visible");
 });
-
